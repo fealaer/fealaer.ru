@@ -30,3 +30,5 @@ node_modules/
 dist/
 .sass-cache/
 bower_components/
+
+.idea/
