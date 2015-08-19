@@ -19,6 +19,7 @@ var source = require('vinyl-source-stream'),
     destFileName = 'app.js';
 
 var browserSync = require('browser-sync');
+var historyApiFallback = require('connect-history-api-fallback');
 var reload = browserSync.reload;
 
 // Styles
@@ -173,7 +174,10 @@ gulp.task('watch', ['html', 'fonts', 'bundle'], function() {
         // Note: this uses an unsigned certificate which on first access
         //       will present a certificate warning in the browser.
         // https: true,
-        server: ['dist', 'app']
+        server: {
+            middleware: [ historyApiFallback() ],
+            baseDir: ['dist', 'app']
+        }
     });
 
     // Watch .json files
