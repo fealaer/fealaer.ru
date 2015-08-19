@@ -1,44 +1,128 @@
+'use strict';
 
-var React = window.React = require('react'),
-    Timer = require("./ui/Timer"),
-    mountNode = document.getElementById("app");
+var React = window.React = require('react');
 
-var TodoList = React.createClass({
-  render: function() {
-    var createItem = function(itemText) {
-      return <li>{itemText}</li>;
-    };
-    return <ul>{this.props.items.map(createItem)}</ul>;
-  }
-});
-var TodoApp = React.createClass({
+var appNode = document.getElementById("app");
+
+var Router = require('react-router')
+  , Route = Router.Route
+  , DefaultRoute = Router.DefaultRoute
+  , RouteHandler = Router.RouteHandler
+  , NotFoundRoute = Router.NotFoundRoute
+  , Link = Router.Link;
+
+let Menu = require('./ui/Menu');
+
+let Header = React.createClass({
   getInitialState: function() {
-    return {items: [], text: ''};
-  },
-  onChange: function(e) {
-    this.setState({text: e.target.value});
-  },
-  handleSubmit: function(e) {
-    e.preventDefault();
-    var nextItems = this.state.items.concat([this.state.text]);
-    var nextText = '';
-    this.setState({items: nextItems, text: nextText});
+    return {
+      menuItems: [
+        {href: 'resume', label: 'Resume'},
+        {href: 'blog', label: 'Blog'}],
+      name: 'Andrey Pushkarev'
+    };
   },
   render: function() {
     return (
-      <div>
-        <h3>TODO</h3>
-        <TodoList items={this.state.items} />
-        <form onSubmit={this.handleSubmit}>
-          <input onChange={this.onChange} value={this.state.text} />
-          <button>{'Add #' + (this.state.items.length + 1)}</button>
-        </form>
-        <Timer />
+      <header className="navbar navbar-fixed-top">
+        <div className="container">
+          <div className="navbar-header">
+            <button type="button" className="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false">
+              <span className="sr-only">Toggle navigation</span>
+              <span className="icon-bar"></span>
+              <span className="icon-bar"></span>
+              <span className="icon-bar"></span>
+            </button>
+            <Link className="navbar-brand" to="resume">{this.state.name}</Link>
+          </div>
+          <Menu items={this.state.menuItems} />
+        </div>
+      </header>
+    );
+  }
+});
+
+let Content = React.createClass({
+  render: function() {
+    return (
+      <div className="container">
+        <div className="jumbotron">
+          <h1>{this.props.page}</h1>
+        </div>
       </div>
     );
   }
 });
 
+var Resume = React.createClass({
+  render: function () {
+    return (
+      <Content page="Resume"/>
+    );
+  }
+});
 
-React.render(<TodoApp />, mountNode);
+var Blog = React.createClass({
+  render: function () {
+    return (
+      <Content page="Blog"/>
+    );
+  }
+});
 
+var BlogPost = React.createClass({
+  render: function () {
+    return (
+      <h1>
+        BlogPost
+      </h1>
+    );
+  }
+});
+
+var NotFound = React.createClass({
+  render: function () {
+    return (
+      <h1>
+        BlogPost
+      </h1>
+    );
+  }
+});
+
+var NotFoundBlogPost = React.createClass({
+  render: function () {
+    return (
+      <h1>
+        BlogPost
+      </h1>
+    );
+  }
+});
+
+var App = React.createClass({
+  render: function () {
+    return (
+      <div>
+        <Header/>
+        <RouteHandler/>
+      </div>
+    );
+  }
+});
+
+var routes = (
+  <Route handler={App} path="/">
+    <DefaultRoute handler={Resume}/>
+    <Route name="resume" handler={Resume}/>
+    <Route name="blog" handler={Blog}>
+      <Route name="blogPost" path="/blog/post/:postId" handler={BlogPost}/>
+      <NotFoundRoute handler={NotFoundBlogPost}/>
+    </Route>
+    <NotFoundRoute handler={NotFound}/>
+  </Route>
+);
+
+Router.run(routes, Router.HistoryLocation, function (Handler) {
+  React.render(<Handler/>, appNode);
+});
