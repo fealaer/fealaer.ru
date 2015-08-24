@@ -141,12 +141,6 @@ gulp.task('moveLibraries',['clean'], function(){
   .pipe(gulp.dest('dist/scripts'));
 });
 
-// Move Resume.pdf
-gulp.task('movePdf', function(){
-    gulp.src(['./app/Resume.pdf'], { base: './app/' })
-      .pipe(gulp.dest('dist/'));
-});
-
 // Bower helper
 gulp.task('bower', function() {
     gulp.src('app/bower_components/**/*.js', {
@@ -163,9 +157,9 @@ gulp.task('json', function() {
         .pipe(gulp.dest('dist/scripts/'));
 });
 
-// Robots.txt and favicon.ico
+// Robots.txt, favicon.ico and others
 gulp.task('extras', function() {
-    return gulp.src(['app/*.txt', 'app/*.ico'])
+    return gulp.src(['app/*.txt', 'app/*.ico', 'app/CNAME', 'app/*.md', 'app/*.pdf'])
         .pipe(gulp.dest('dist/'))
         .pipe($.size());
 });
@@ -201,7 +195,7 @@ gulp.task('watch', ['html', 'fonts', 'bundle'], function() {
 });
 
 // Build
-gulp.task('build', ['html', 'buildBundle', 'images', 'fonts', 'movePdf', 'extras'], function() {
+gulp.task('build', ['html', 'buildBundle', 'images', 'fonts', 'extras'], function() {
     gulp.src('dist/scripts/app.js')
         .pipe($.uglify())
         .pipe($.stripDebug())
