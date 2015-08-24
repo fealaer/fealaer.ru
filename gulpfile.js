@@ -36,7 +36,10 @@ gulp.task('sass', function() {
     return $.rubySass('./app/styles', {
             style: 'expanded',
             precision: 10,
-            loadPath: ['app/bower_components']
+            loadPath: [
+                'app/bower_components/bootstrap-sass-official/assets/stylesheets',
+                'app/bower_components/font-awesome/scss'
+            ]
         })
         .pipe($.autoprefixer('last 1 version'))
         .pipe(gulp.dest('dist/styles'))
@@ -102,11 +105,9 @@ gulp.task('images', function() {
 });
 
 // Fonts
-gulp.task('fonts', function() {
-    return gulp.src(require('main-bower-files')({
-            filter: '**/*.{eot,svg,ttf,woff,woff2}'
-        }).concat('app/fonts/**/*'))
-        .pipe(gulp.dest('dist/fonts'));
+gulp.task('fonts', function () {
+    return gulp.src('app/bower_components/**/fonts/**/*.{ttf,woff,woff2,eot,svg}')
+        .pipe(gulp.dest('dist/fonts/'));
 });
 
 // Clean
