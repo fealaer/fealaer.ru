@@ -11,9 +11,9 @@ var Router = require('react-router')
   , NotFoundRoute = Router.NotFoundRoute
   , Link = Router.Link;
 
-let Menu = require('./ui/Menu');
+var Menu = require('./ui/Menu');
 
-let Header = React.createClass({
+var Header = React.createClass({
   getInitialState: function() {
     return {
       menuItems: [
@@ -24,7 +24,7 @@ let Header = React.createClass({
   },
   render: function() {
     return (
-      <header className="navbar navbar-fixed-top">
+      <header className="navbar navbar-default navbar-fixed-top" role="navigation">
         <div className="container">
           <div className="navbar-header">
             <button type="button" className="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false">
@@ -42,7 +42,7 @@ let Header = React.createClass({
   }
 });
 
-let Content = React.createClass({
+var Content = React.createClass({
   render: function() {
     return (
       <div className="container">

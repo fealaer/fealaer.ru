@@ -21,12 +21,13 @@ var MenuItem = React.createClass({
 
 var Menu = React.createClass({
   render: function() {
-    var createItem = function(item) {
+    function createItem (item) {
       return <MenuItem item={item}/>;
-    };
+    }
+
     return (
       <nav className="collapse navbar-collapse" id="navbar-collapse">
-        <ul className="nav nav-pills navbar-right">
+        <ul className="nav navbar-nav navbar-right">
           {this.props.items.map(createItem)}
         </ul>
       </nav>
