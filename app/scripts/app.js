@@ -11,7 +11,9 @@ var Router = require('react-router')
   , NotFoundRoute = Router.NotFoundRoute
   , Link = Router.Link;
 
-var Menu = require('./ui/Menu');
+var Menu = require('./ui/Menu')
+  , ResumeBody = require('./ui/Resume').Body
+  , ResumeSideMenu = require('./ui/Resume').SideMenu;
 
 var Header = React.createClass({
   getInitialState: function() {
@@ -33,6 +35,7 @@ var Header = React.createClass({
               <span className="icon-bar"></span>
               <span className="icon-bar"></span>
             </button>
+            <Link className="navbar-brand" to="resume"><img src="images/ava.jpeg" className="brand-image img-circle"/></Link>
             <Link className="navbar-brand" to="resume">{this.state.name}</Link>
           </div>
           <Menu items={this.state.menuItems} />
@@ -46,8 +49,15 @@ var Content = React.createClass({
   render: function() {
     return (
       <div className="container">
-        <div className="jumbotron">
-          <h1>{this.props.page}</h1>
+        <div className="row">
+          <div className="col-md-10" role="main">
+            <div>
+              {this.props.page}
+            </div>
+          </div>
+          <div className="col-md-2 scroll-spy" role="navigation">
+            {this.props.sideMenu}
+          </div>
         </div>
       </div>
     );
@@ -56,8 +66,10 @@ var Content = React.createClass({
 
 var Resume = React.createClass({
   render: function () {
+    let page = <ResumeBody/>;
+    let sideMenu = <ResumeSideMenu/>;
     return (
-      <Content page="Resume"/>
+      <Content page={page} sideMenu={sideMenu}/>
     );
   }
 });
@@ -104,7 +116,6 @@ var App = React.createClass({
   render: function () {
     return (
       <div>
-        <Header/>
         <RouteHandler/>
       </div>
     );
