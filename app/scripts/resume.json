@@ -1,0 +1,161 @@
+{
+  "header": {
+    "name": "Andrey Pushkarev",
+    "position": "Software Engineer",
+    "location": "Moscow, Russia",
+    "phone": "+62 822 4740 3671",
+    "email": "fealaer@gmail.com",
+    "website": "fealaer.ru",
+    "github": "fealaer",
+    "linkedIn": "fealaer",
+    "stackoverflow": "fealaer",
+    "skype": "fealaer1",
+    "twitter": "fealaer"
+  },
+  "sections": [
+    {
+      "title": "Employment",
+      "records": [
+        {
+          "header": {
+            "col1": "Software Engineer",
+            "col2": "Self Employed / Freelancer, Remote",
+            "col3": "Mar 2013 - Present"
+          },
+          "entries": [
+            "Implemented 14 pages modules for a SPA website [Mezuka](http://mezuka.com/) in close collaboration with frontend and backend teams. (Apr - Jul 2015)",
+            "[Contributed](https://github.com/angular/angular.js/commit/436d0896efabed0fc97885e970431445667321bf) to an Open Source web framework AngularJS. (Jan 2015)",
+            "Designed, implemented, tested, released and maintained an entire hybrid mobile application for [Android](https://play.google.com/store/apps/details?id=com.fealaer.avm.prod) and [iOS](https://itunes.apple.com/us/app/avm-cream-house/id978056701) platforms and REST API for an AVM Cream House Juice Bar. (Nov 2014 - Present)",
+            "Designed and implemented one page app [Convertiser](http://convertiser.com/) on top of REST API in close collaboration with backend team. (Apr - Oct 2014)",
+            "Architected and coded the JavaScript snippet Convertext which detects content nodes on publisher's web sites. (Sep - Nov 2014)",
+            "Launched and maintained an online portfolio web site [Liltael.com](http://liltael.com/) for a Character Animator Ekaterina Pushkareva. (Dec 2013 - Present)",
+            "Implemented REST API and an Android application LowestPrice in the context of [Hackathon “Forward with Google”](http://vpered.withgoogle.com/). (Oct 2013)",
+            "Designed and implemented a backend part of the project [YeNoMe](http://yenomeapi.herokuapp.com/) in the context of [Hackathon Garage48](http://garage48.org/). (Oct 2013)"
+          ]
+        },
+        {
+          "header": {
+            "col1": "Senior Software Engineer",
+            "col2": "AT Consulting, Moscow, Russia",
+            "col3": "Sep 2011 – Mar 2013"
+          },
+          "entries": [
+            "Promoted to a Senior Software Engineer; supervised and coached other software engineers in the project team.",
+            "Made a migration of the project code from SVN to GIT that helped our distributed team to increase the overall development speed.",
+            "Introduced TDD and CI that greatly improved product quality and allowed our Scrum team to release a new version every 2 weeks.",
+            "Wrote 35 different web services (SOAP, REST). Integrated with 10 systems as a service provider and/or as a service client.",
+            "Designed and coded a robust architecture of the project in terms of data receiving, converting, validating and storing.",
+            "Created a critical positioning algorithm of form on scanned image which improved the quality of recognizable fragments.",
+            "Increased the amount of images that were suitable for processing using one template from 300 to more than 2000000."
+          ]
+        },
+        {
+          "header": {
+            "col1": "Software Engineer",
+            "col2": "NVision Group, Moscow, Russia",
+            "col3": "Sep 2010 – Sep 2011"
+          },
+          "entries": [
+            "Refactored an architecture that allowed to reuse previously developed components of government services.",
+            "Reduced developing time of new e-services from 1-2 weeks to 2-3 days.",
+            "Designed and implemented a DB architecture well adapted for handling CRUD and complex reports under high load.",
+            "Wrote several highly efficient storage procedures for a report system.",
+            "Designed and implemented a flexible web reports builder for operators and editors.",
+            "Implemented several JavaScript widgets which optimized a working process of the system operators."
+          ]
+        },
+        {
+          "header": {
+            "col1": "Software Engineer",
+            "col2": "Probusiness Bank, Moscow, Russia",
+            "col3": "Jul 2008 – Sep 2010"
+          },
+          "entries": [
+            "Designed and implemented several web applications for viewing detailed bank reports.",
+            "Improved usability and functionality of a report generation system.",
+            "Improved existing and developed new ETL processes."
+          ]
+        },
+        {
+          "header": {
+            "col1": "Database Software Engineer",
+            "col2": "Media Soft Integro, Moscow, Russia",
+            "col3": "Jul 2008 – Sep 2010"
+          },
+          "entries": [
+            "Promoted to a Database Software Engineer from a Technical Writer.",
+            "Designed DB architectures, wrote views, functions and stored procedures for several company’s web projects."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Education",
+      "records": [
+        {
+          "header": {
+            "col1": "Moscow, Russia",
+            "col2": "Moscow Institute of Electronics and Math",
+            "col3": "Sep 2006 – Jul 2011"
+          },
+          "entries": [
+            "M.S.E. in Computer and Information Science, July 2011. GPA: 3.26"
+          ]
+        },
+        {
+          "header": {
+            "col1": "Online",
+            "col2": "Massive Open Online Course",
+            "col3": "Dec 2012 – Feb 2014"
+          },
+          "entries": [
+            "[Machine Learning](https://googledrive.com/host/0B9-iplzBIblqSDA5QzF5cW01TDQ/Machine_Learning.pdf), [Game Theory](https://googledrive.com/host/0B9-iplzBIblqSDA5QzF5cW01TDQ/Game_Theory.pdf) – Stanford University through Coursera Inc and Class2Go",
+            "[Foundations of Computer Graphics](https://googledrive.com/host/0B9-iplzBIblqSDA5QzF5cW01TDQ/CS184_1x_Foundations_of_Computer_Graphics.pdf), [Artificial Intelligence](https://googledrive.com/host/0B9-iplzBIblqSDA5QzF5cW01TDQ/CS188_1x_Artificial_Intelligence.pdf) – The University of California, Berkeley through edX",
+            "[Algorithms Part I](https://www.coursera.org/course/algs4partI) and [Part II](https://www.coursera.org/course/algs4partII) – Princeton University through Coursera Inc",
+            "MongoDB for [Java Developers](https://googledrive.com/host/0B9-iplzBIblqSDA5QzF5cW01TDQ/M101J_MongoDB_for_Java_Developers.pdf), [Node.js Developers](https://googledrive.com/host/0B9-iplzBIblqSDA5QzF5cW01TDQ/M101JS_MongoDB_for_Node.js_Developers.pdf), [Python Developers](https://googledrive.com/host/0B9-iplzBIblqSDA5QzF5cW01TDQ/M101P_-_MongoDB_for_Developers.pdf), [DBAs](https://googledrive.com/host/0B9-iplzBIblqSDA5QzF5cW01TDQ/M102_-_MongoDB_for_DBAs.pdf) – MongoDB Inc",
+            "[Functional Programming Principles in Scala](https://googledrive.com/host/0B9-iplzBIblqSDA5QzF5cW01TDQ/Functional_Programming_Principles_in_Scala.pdf) – Swiss Federal Institute of Technology (EPFL) through Coursera Inc",
+            "[Image and video processing](https://googledrive.com/host/0B9-iplzBIblqSDA5QzF5cW01TDQ/Image_and_video_processing.pdf) – Duke University through Coursera Inc"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Projects",
+      "records": [
+        {
+          "entries": [
+            "**AVM Cream House** is a hybrid mobile [Android](https://play.google.com/store/apps/details?id=com.fealaer.avm.prod) and [iOS](https://itunes.apple.com/us/app/avm-cream-house/id978056701) menu app with customer’s recommendations for a juice bar located in Sri Lanka. (2014 – Present) JavaScript, HTML, CSS, LESS, AngularJS, Ionic, Cordova, node.js, Grunt, Express, MongoDB",
+            "**Convertiser** is a [platform](http://convertiser.com/) that helps advertisers reach new customers and powers publishers with monetization tools. (2014 – 2015) JavaScript, HTML, CSS, LESS, AngularJS, Underscore, Restangular, Bootstrap, Browserify, node.js, Grunt",
+            "**eZAGS** is the electronic federal system civilian registrar as part of system [Gosuslugi.RU](http://www.gosuslugi.ru/) that provides government e-services. (2011 – 2013) Java SE/EE (JAX-WS, JAX-RS, EJB, JPA, JTA), Oracle DB, Weblogic, JBoss, Hibernate, OpenEJB",
+            "**Retroconversion of the act records** is the system of getting electronic act records of civil status from paper originals. (2013) Java SE/EE (JAX-WS, JAX-RS), Jersey, Grizzly, JavaCV"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Technical Skills",
+      "records": [
+        {
+          "entries": [
+            "Languages: *Proficient*: JavaScript/CoffeeScript, Java; *Prior Experience*: PHP; Training: Python, Scala, C.",
+            "Other Languages: HTML, CSS (LESS, SASS), SQL, JSON, XML.",
+            "Databases: *Proficient*: MongoDB; *Prior Experience*: MySQL, PostgreSQL, Sybase, Oracle.",
+            "Frameworks/Libraries: AngularJS, Ionic, jQuery, Lodash/Underscore, Restangular, Bootstrap, Karma, Mocha, Jasmine.",
+            "Environments and Tools: Mac OS, Cordova (Android, iOS), Linux, node.js/jo.js, Heroku, Git/GitHub, Grunt/Gulp."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Languages",
+      "records": [
+        {
+          "entries": [
+            "**English** – Advanced; IELTS (June 2015) Overall Band Score 6.5: Listening 6.5 Reading 8.0 Writing 6.0 Speaking 6.0.",
+            "**Russian** – Native."
+          ]
+        }
+      ]
+    }
+  ]
+}
