@@ -25,6 +25,7 @@
     "gulp-webserver": "latest",
     "jest-cli": "latest",
     "main-bower-files": "~2.6.2",
+    "marked": "^0.3.5",
     "react": "latest",
     "react-router": "^0.13.3",
     "react-tools": "latest",
