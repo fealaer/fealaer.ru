@@ -4,7 +4,7 @@
 git checkout release
 
 # Pull all changes from master to release
-git pull origin master
+git rebase master
 
 # Build new version of the application
 gulp build
