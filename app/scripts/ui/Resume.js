@@ -13,6 +13,10 @@ renderer.paragraph = function(text) {
   return text + '\n';
 };
 
+renderer.link = function link(href, title, text) {
+  return '<a href="' + href + '" target="_blank">' + text + '</a>';
+};
+
 function createIdFromSectionTitle (title) {
   return title.toLowerCase().split(' ').join('_');
 }
@@ -138,7 +142,7 @@ let SideMenu = React.createClass({
           <li><a href="#contacts">Contacts</a></li>
           {this.state.sections.map(createLink)}
         </ul>
-        <a className="back-to-top" href="Resume.pdf" target="_blank"><i className="fa fa-lg fa-file-pdf-o"/> Download as PDF</a>
+        <a className="back-to-top" href="Andrey Pushkarev Resume.pdf" target="_blank"><i className="fa fa-lg fa-file-pdf-o"/> Download as PDF</a>
       </nav>
     );
   }
