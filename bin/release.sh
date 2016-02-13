@@ -25,7 +25,7 @@ git subtree push --prefix dist origin gh-pages
 # Check out to release.ru branch
 git checkout release.ru
 
-# Pull all changes from master to release
+# Pull all changes from release to release.ru
 git rebase release
 
 echo 'fealaer.ru' > app/CNAME
