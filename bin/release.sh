@@ -17,8 +17,10 @@ COMMENT="New version from $DATE"
 git add dist
 git commit -m "\"$COMMENT\""
 
+# Delete old version of branch gh-pages
+git push origin :gh-pages
 # Push new version of build to the gh-pages branch
-git subtree push --prefix dist origin gh-pages -f
+git subtree push --prefix dist origin gh-pages
 
 # Check out to master branch
 git checkout master
