@@ -28,6 +28,7 @@ git checkout release.ru
 # Pull all changes from release to release.ru
 git rebase release
 
+# Change CNAME for fealaer.ru
 echo 'fealaer.ru' > app/CNAME
 
 # Build new version of the application
@@ -41,6 +42,9 @@ git commit -m "\"$COMMENT\""
 git push fealaer.ru :gh-pages
 # Push new version of build to the gh-pages branch
 git subtree push --prefix dist fealaer.ru gh-pages
+
+# Restore CNAME for fealaer.me
+echo 'fealaer.me' > app/CNAME
 
 # Check out to master branch
 git checkout master
