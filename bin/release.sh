@@ -18,7 +18,7 @@ git add dist
 git commit -m "\"$COMMENT\""
 
 # Push new version of build to the gh-pages branch
-git subtree push --prefix dist origin gh-pages
+git subtree push --prefix dist origin gh-pages -f
 
 # Check out to master branch
 git checkout master
