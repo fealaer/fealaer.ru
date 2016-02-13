@@ -1,11 +1,11 @@
 {
   "header": {
     "name": "Andrey Pushkarev",
-    "position": "Software Engineer",
-    "location": "Moscow, Russia",
-    "phone": "+62 822 4740 3671",
+    "position": "Full Stack Web Developer",
+    "location": "Sydney, Australia",
+    "phone": "+61 432 251 563",
     "email": "fealaer@gmail.com",
-    "website": "fealaer.ru",
+    "website": "fealaer.me",
     "github": "fealaer",
     "linkedIn": "fealaer",
     "stackoverflow": "fealaer",
@@ -23,6 +23,7 @@
             "col3": "Mar 2013 - Present"
           },
           "entries": [
+            "Designed and implemented 2 Single Page Applications (SPA) as a part of [Realine](http://test.login.realine.net/#/Infrastructure/Main/About) project. (Oct 2015 - Present)",
             "Implemented 14 pages modules for a SPA website [Mezuka](http://mezuka.com/) in close collaboration with frontend and backend teams. (Apr - Jul 2015)",
             "[Contributed](https://github.com/angular/angular.js/commit/436d0896efabed0fc97885e970431445667321bf) to an Open Source web framework AngularJS. (Jan 2015)",
             "Designed, implemented, tested, released and maintained an entire hybrid mobile application for [Android](https://play.google.com/store/apps/details?id=com.fealaer.avm.prod) and [iOS](https://itunes.apple.com/us/app/avm-cream-house/id978056701) platforms and REST API for an AVM Cream House Juice Bar. (Nov 2014 - Present)",
@@ -140,7 +141,7 @@
             "Languages: *Proficient*: JavaScript/CoffeeScript, Java; *Prior Experience*: PHP; Training: Python, Scala, C.",
             "Other Languages: HTML, CSS (LESS, SASS), SQL, JSON, XML.",
             "Databases: *Proficient*: MongoDB; *Prior Experience*: MySQL, PostgreSQL, Sybase, Oracle.",
-            "Frameworks/Libraries: AngularJS, Ionic, jQuery, Lodash/Underscore, Restangular, Bootstrap, Karma, Mocha, Jasmine.",
+            "Frameworks/Libraries: AngularJS, ReactJS, Ionic, jQuery, Lodash/Underscore, Restangular, Bootstrap, Karma, Mocha, Jasmine.",
             "Environments and Tools: Mac OS, Cordova (Android, iOS), Linux, node.js/jo.js, Heroku, Git/GitHub, Grunt/Gulp."
           ]
         }
